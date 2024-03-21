@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Gothic;
+    src: url(./gothic/namaskar.ttf);
+}
+
+
+body {
+    font-family: Gothic;
+    background-color: #000000;
+    color: #e7e6e6;
+    font-family: 'Gothic', Arial, sans-serif;
+    text-align: center;
+}
+p{
+    font-size: 15px;
+}
+h1{
+    color: #555;
+}
+body, html {
+    font-family: Gothic;
+}
+.containers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px; /* Adds space between containers */
+}
+.gothic-yazi {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+    background-color: #161414;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 0%; /* Makes sure the content uses all available width */
+}
+.custom-container {
+    border-radius: 5px;
+    flex-basis: calc(33.333% - 20px); /* Adjusts the base width minus gap */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+@media (max-width: 768px) {
+    body {
+        background-color: #333;
+    }
+    .gothic-yazi {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        background-color: #555;
+    }
+    .gothic-yazi {
+        font-size: 8px;
+        padding: 2px 5px;
+    }
+    .containers {
+        flex-direction: column;
+        align-items: center;
+    }
+    .custom-container {
+        flex-basis: auto; /* Allows containers to grow */
+    }
+}

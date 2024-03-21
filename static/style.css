@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Gothic;
+    src: url(.//gothic/namaskar.ttf);
+}
+
+body {
+    font-family: Gothic;
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Gothic', Arial, sans-serif;
+    text-align: center;
+}
+.gothic-yazi {
+    font-size: 12px;
+    color: #ff0000; /* Yazı rengi */
+    letter-spacing: 2px; /* Harfler arası boşluk */
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.7); /* Yazı gölgesi */
+    background-color: #222; /* Arkaplan rengi */
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+body {
+    background-color: #333; /* Arka plan rengini değiştir */
+}
+.gothic-yazi {
+    font-size: 10px; /* Yazı boyutunu küçült */
+    padding: 5px 10px; /* Padding'i azalt */
+}
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: #555; /* Arka plan rengini değiştir */
+    }
+    .gothic-yazi {
+        font-size: 8px; /* Yazı boyutunu daha da küçült */
+        padding: 2px 5px; /* Padding'i daha da azalt */
+    }
+}

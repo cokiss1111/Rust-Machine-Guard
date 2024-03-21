@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
+    <script src="/static/machine/main.js"></script>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/800px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cokiss Machine</title>
+    <link rel="stylesheet" href="/static/machine/style.css">
+</head>
+</style>
+<body>
+    <div class="containers">
+        <div class="custom-container gothic-yazi">
+            <div class="custom-mb-3">
+                
+                <h1>execute powershell script</h1>
+                <p>Powershell Scripti calistirir </p>
+                <input type="text" class="form-control" id="passwordInput1" required>
+            </div>
+            <div class="custom-mb-3">
+                <br>
+                <div id="errorMessage1" style="color: rgb(255, 18, 18); margin-top: 20px;"></div>
+                <button style="background-color: red;" class="btn btn-primary" type="submit" onclick="powershell()">SUBMIT</button>
+            </div>
+        </div>
+        <div class="custom-container gothic-yazi">
+            <h1>Restart machine</h1>
+            <p>Makineyi yeniden baslatir</p>
+            <button style="background-color: red;" class="btn btn-primary" type="submit" onclick="restart()">RESTART</button>
+        </div>
+        <div class="custom-container gothic-yazi">
+            <h1>Shutdown machine</h1>
+            <p>Makineyi kapatir</p>
+            <button style="background-color: red;" class="btn btn-primary" type="submit" onclick="shutdown()">CLOSE</button>
+    </div>
+
+    
+    <table id="example" class="display" style="width: 60%;">
+        <thead>
+            <tr>
+                <th>Status</th>
+                <th>Ram Usage</th>
+                <th>Cpu Usage</th>
+                <th>Usage</th>
+                <th>Enabled TCP Connections</th>
+                <th>Opened App Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="status"></td>
+                <td id="ram"></td>
+                <td id="cpu"></td>
+                <td id="disk"></td>
+                <td id="tcp"></td>
+                <td id="app"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

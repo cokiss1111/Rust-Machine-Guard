@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/800px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{GUZELIMBUKAFATAS}}</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <script src="/static/bootstrap.bundle.min.js"></script>
+    <script src="/static/fcs1.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <form id="myForm" onsubmit="event.preventDefault(); checkout();">
+        <div style="border-radius: 5px;" class="custom-container gothic-yazi">
+            <div class="custom-mb-3">
+                <img style="height: 150px; width: 200px; border-radius: 5px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/800px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg" alt="">
+                <br>
+                <label for="passwordInp ut" class="form-label">Enter The key</label>
+                <br>
+                <br>
+                <input type="password" class="form-control" id="passwordInput" required>
+            </div>
+            <div class="custom-mb-3">
+                <br>
+                <div id="errorMessage" style="color: rgb(255, 18, 18); margin-top: 20px;"></div>
+                <br>
+                <button style="background-color: yellow;" class="btn btn-primary">SUBMIT</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
